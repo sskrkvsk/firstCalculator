@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.calc {
+    text-align: center;
+    background-color: #79f0e6;
+    max-width: 500px;
+}
+
+.numbers {
+    display: grid;
+    grid-template-areas: "lb1 nb1" "lb2 nb2";
+    gap: 1em;
+    padding: 1em;
+}
+
+.label1 {
+    grid-area: lb1;
+}
+.label2 {
+    grid-area: lb2;
+}
+.numb1 {
+    grid-area: nb1;
+    max-width: 250px;
+}
+.numb2 {
+    grid-area: nb2;
+    max-width: 250px;
+}
+
+.buttons {
+    background-color: #51d3c8;
+    padding: 1em;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+button {
+    margin-right: 2em;
+    padding: .5em 1em;
+    background-color: #5e5e5e;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #8a8a8a;
+}
